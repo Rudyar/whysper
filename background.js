@@ -7,7 +7,7 @@ if (!API_KEY) {
   );
 }
 
-chrome.runtime.onMessage.addListener(async (message, sender, sendResponse) => {
+chrome.runtime.onMessage.addListener(async (message) => {
   if (message.action === "processAudio") {
     console.log("🎧 Received Base64 Audio in background.js");
 
